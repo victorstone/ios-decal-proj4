@@ -1,4 +1,4 @@
-# ios-decal-proj4
+# NoteMap
 ## Authors
 Victor Stone
 ## Purpose
