@@ -1,16 +1,16 @@
-## ios-decal-proj4
+# ios-decal-proj4
 
 TODO: Write a project description
 
-# Authors
+## Authors
 
 TODO: Describe the installation process
 
-# Usage
+## Usage
 
 TODO: Write usage instructions
 
-# Contributing
+## Contributing
 
 1. Fork it!
 2. Create your feature branch: `git checkout -b my-new-feature`
@@ -18,14 +18,14 @@ TODO: Write usage instructions
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 
-# History
+## History
 
 TODO: Write history
 
-# Credits
+## Credits
 
 TODO: Write credits
 
-# License
+## License
 
 TODO: Write license
