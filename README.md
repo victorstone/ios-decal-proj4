@@ -1,11 +1,6 @@
 # ios-decal-proj4
-
-TODO: Write a project description
-
 ## Authors
-
-TODO: Describe the installation process
-
+Victor Stone
 ## Usage
 
 TODO: Write usage instructions
