@@ -11,5 +11,8 @@ import UIKit
 
 class NoteCell : UITableViewCell {
 
+    @IBOutlet weak var NoteDescription: UILabel!
+    
+    var noteItem : NoteItem!
     
 }

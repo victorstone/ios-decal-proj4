@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		F41B05001CD7415000BA9E01 /* pdfItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41B04FF1CD7415000BA9E01 /* pdfItem.swift */; };
 		F41B05021CD741FA00BA9E01 /* youtubeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41B05011CD741FA00BA9E01 /* youtubeItem.swift */; };
+		F41B05061CD80ED300BA9E01 /* NoteViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41B05051CD80ED300BA9E01 /* NoteViewCell.swift */; };
+		F41B05081CD81BD600BA9E01 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41B05071CD81BD600BA9E01 /* WebViewController.swift */; };
+		F47596DD1CD838ED00E5531D /* rsz_classes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F47596DC1CD838ED00E5531D /* rsz_classes.jpg */; };
 		F48EE9651CD73D4F0089262C /* linkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48EE9641CD73D4F0089262C /* linkCell.swift */; };
 		F4C328AE1CD4703D00C547FF /* mainData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C328AD1CD4703D00C547FF /* mainData.swift */; };
 		F4C328B01CD470C100C547FF /* NoteItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C328AF1CD470C100C547FF /* NoteItem.swift */; };
@@ -50,6 +53,9 @@
 /* Begin PBXFileReference section */
 		F41B04FF1CD7415000BA9E01 /* pdfItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pdfItem.swift; sourceTree = "<group>"; };
 		F41B05011CD741FA00BA9E01 /* youtubeItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = youtubeItem.swift; sourceTree = "<group>"; };
+		F41B05051CD80ED300BA9E01 /* NoteViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteViewCell.swift; sourceTree = "<group>"; };
+		F41B05071CD81BD600BA9E01 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		F47596DC1CD838ED00E5531D /* rsz_classes.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rsz_classes.jpg; sourceTree = "<group>"; };
 		F48EE9641CD73D4F0089262C /* linkCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = linkCell.swift; sourceTree = "<group>"; };
 		F4C328AD1CD4703D00C547FF /* mainData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainData.swift; sourceTree = "<group>"; };
 		F4C328AF1CD470C100C547FF /* NoteItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteItem.swift; sourceTree = "<group>"; };
@@ -109,6 +115,7 @@
 				F4C328B81CD5B81500C547FF /* NoteCell.swift */,
 				F4C328BE1CD5C6C900C547FF /* SubjectCell.swift */,
 				F48EE9641CD73D4F0089262C /* linkCell.swift */,
+				F41B05051CD80ED300BA9E01 /* NoteViewCell.swift */,
 			);
 			name = "Custom Cells";
 			sourceTree = "<group>";
@@ -141,6 +148,7 @@
 			children = (
 				F4CEB23E1CD1D21C008CAFB1 /* AppDelegate.swift */,
 				F4CEB2421CD1D21C008CAFB1 /* Main.storyboard */,
+				F47596DC1CD838ED00E5531D /* rsz_classes.jpg */,
 				F4CEB2481CD1D21C008CAFB1 /* Assets.xcassets */,
 				F4CEB24A1CD1D21C008CAFB1 /* LaunchScreen.storyboard */,
 				F4CEB24D1CD1D21C008CAFB1 /* Info.plist */,
@@ -187,6 +195,7 @@
 				F4C328B61CD5B66700C547FF /* NotesForClassTableViewController.swift */,
 				F4C328BA1CD5C17B00C547FF /* AddNotesViewController.swift */,
 				F4C328BC1CD5C3C900C547FF /* SubjectTableViewController.swift */,
+				F41B05071CD81BD600BA9E01 /* WebViewController.swift */,
 			);
 			name = Controller;
 			path = NoteMap;
@@ -298,6 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4CEB24C1CD1D21C008CAFB1 /* LaunchScreen.storyboard in Resources */,
+				F47596DD1CD838ED00E5531D /* rsz_classes.jpg in Resources */,
 				F4CEB2491CD1D21C008CAFB1 /* Assets.xcassets in Resources */,
 				F4CEB2441CD1D21C008CAFB1 /* Main.storyboard in Resources */,
 			);
@@ -325,6 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4C328BF1CD5C6C900C547FF /* SubjectCell.swift in Sources */,
+				F41B05081CD81BD600BA9E01 /* WebViewController.swift in Sources */,
 				F4C328BD1CD5C3C900C547FF /* SubjectTableViewController.swift in Sources */,
 				F4C328B71CD5B66700C547FF /* NotesForClassTableViewController.swift in Sources */,
 				F4C328B51CD58A8B00C547FF /* ClassCell.swift in Sources */,
@@ -339,6 +350,7 @@
 				F41B05001CD7415000BA9E01 /* pdfItem.swift in Sources */,
 				F4CEB23F1CD1D21C008CAFB1 /* AppDelegate.swift in Sources */,
 				F4C328BB1CD5C17B00C547FF /* AddNotesViewController.swift in Sources */,
+				F41B05061CD80ED300BA9E01 /* NoteViewCell.swift in Sources */,
 				F4CEB2471CD1D21C008CAFB1 /* NoteMap.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

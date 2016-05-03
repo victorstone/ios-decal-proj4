@@ -44,6 +44,17 @@ class mainData {
         return false
     }
     
+    func getIndexForNoteForClassAndNoteName(classname : String, notename: String) -> Int? {
+        var count = 0
+        for note in noteForClasses[classname]! {
+            if note.identifier == notename {
+                return count
+            }
+            count += 1
+        }
+        return nil
+    }
+    
     /*********************Setters************************/
     
     func addClass(newClass : ClassItem) -> Int {
@@ -55,6 +66,7 @@ class mainData {
             return 1
         }
         Classes[newClass.className] = newClass
+        noteForClasses[newClass.className] = [NoteItem]()
         return 0
     }
     
@@ -65,6 +77,7 @@ class mainData {
         //Failed to remove class for... whatever reason
         return 1
     }
+    
     
     func addNote(note : NoteItem) -> Int {
         if var Class = noteForClasses[note.className] {

@@ -14,5 +14,11 @@ class linkCell : UITableViewCell {
     
     @IBOutlet weak var Description: UILabel!
     
+    @IBOutlet weak var ytDescription: UILabel!
+    
+    var pdfitem : pdfItem!
+    var ytitem : youtubeItem!
+    
+    
     
 }

@@ -15,7 +15,11 @@ class ClassTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         allData = mainData()
-        allData.addClass(ClassItem(name: "adsf", sub: "adsf"))
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        self.tableView.reloadData()
+        self.navigationItem.title = "Classes"
     }
     
     @IBAction func enableEditing(sender: AnyObject) {
@@ -96,7 +100,9 @@ class ClassTableViewController: UITableViewController {
         if segue.identifier == "ClassesToNotes" {
             let classSender = sender as! ClassCell
             let className = classSender.ClassNameLabel.text
-            segue.destinationViewController.navigationItem.title = "Notes for " + className!
+            let notesForClassVC = segue.destinationViewController as! NotesForClassTableViewController
+            notesForClassVC.navigationItem.title = "Notes for " + className!
+            notesForClassVC.Class = className
         }
     }
     
@@ -117,12 +123,12 @@ class ClassTableViewController: UITableViewController {
         let classList = [String](allData.Classes.keys)
         let className = classList[indexPath.row]
         cell.ClassNameLabel.text = className
-        let notesForClass = (allData.Classes?[className])
-        cell.NumberOfNotesLabel.text = "Number of Notes: " + String(notesForClass!.Notes.count)
-        cell.SubjectLabl.text = "Subject: " + notesForClass!.subject
+        let notesForClass = (allData.noteForClasses[className])
+        cell.NumberOfNotesLabel.text = "Number of Notes: " + String(notesForClass!.count)
+        cell.SubjectLabl.text = "Subject: " + allData.Classes[className]!.subject
         let dateFormatter = NSDateFormatter()
-        dateFormatter.dateFormat = "dd/mm/yy"
-        cell.TimeStamp.text = "Last Edited: " + dateFormatter.stringFromDate(notesForClass!.lastEdited)
+        dateFormatter.dateFormat = "MM/dd/yy"
+        cell.TimeStamp.text = "Last Edited: " + dateFormatter.stringFromDate(allData.Classes[className]!.lastEdited)
         return cell
     }
     

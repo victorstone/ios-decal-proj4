@@ -14,13 +14,18 @@ import UIKit
 class NoteItem {
     
     var description : String!
-    var pdfLinks : [String]!
-    var youTubeLinks : [String]!
+    var pdfLinks : [pdfItem]!
+    var youtubeLinks : [youtubeItem]!
     var className : String!
+    var identifier : String!
     
-    init(descrip : String, classN : String) {
+    init(id : String, descrip : String, classN : String, pdflinks: [pdfItem], youtubelinks : [youtubeItem]) {
         description = descrip
         className = classN
+        pdfLinks = pdflinks
+        youtubeLinks = youtubelinks
+        identifier = id
+        
     }
     
 }
